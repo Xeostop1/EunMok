@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>은목상사 커피 안내서</title>
-    <script scr="./script/slideshow.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/index.js"></script>
   </head>
   <body>
     <div class="wrap">
-      <header>
+      <header class="clearfix">
         <div id="logo">
           <a href="index.html">
             <h1>EUNMOK</h1>
           </a>
         </div>
         <!--메뉴바-->
-        git test
         <nav>
-          <ul id="topMenu">
+          <ul class="gnb clearfix">
             <li>
               <a href="#">Reservation<span>▼</span></a>
-              <ul>
+              <ul class="sub">
                 <li><a href="#">정기케어서비스</a></li>
                 <li><a href="#">온라인예약</a></li>
                 <li><a href="#">빠른예약</a></li>
@@ -29,7 +30,7 @@
             </li>
             <li>
               <a href="#">About <span>▼</span> </a>
-              <ul>
+              <ul class="sub">
                 <li><a href="#">history</a></li>
                 <li><a href="#">location</a></li>
                 <li><a href="#">partners</a></li>
@@ -37,7 +38,7 @@
             </li>
             <li>
               <a href="#">Product</a>
-              <ul>
+              <ul class="sub">
                 <li><a href="#">machine</a></li>
                 <li><a href="#">coffee</a></li>
                 <li><a href="#">etc</a></li>
@@ -48,7 +49,7 @@
         </nav>
       </header>
       <!--슬라이더-->
-      <div id="slideShow">
+      <div id="slide">
         <div id="slides">
           <img src="./assets/images/coffee_1.jpg" alt="" />
           <img src="./assets/images/coffee_2.jpg" alt="" />
