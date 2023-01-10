@@ -23,3 +23,7 @@ $(document).ready(function () {
 
 //https://ytube.io/3ZsS
 // 23:59 까지 시청
+// 움직이는 애들 
+// 위쪽에서 포지션 relative
+// 직접 움직이는 애들에
+// 포지션 absovlie
