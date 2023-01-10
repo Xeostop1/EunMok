@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,24 +12,25 @@
   <body>
     <div class="wrap">
       <header class="clearfix">
-        <div id="logo">
+        <!-- ===logo==== -->
+        <h1>
           <a href="index.html">
-            <h1>EUNMOK</h1>
+            EUNMOK
           </a>
-        </div>
-        <!--메뉴바-->
+        </h1>
+        <!--====메뉴바=====-->
         <nav>
           <ul class="gnb clearfix">
             <li>
-              <a href="#">Reservation<span>▼</span></a>
-              <ul class="sub">
+              <a href="#">Reservation</a>
+              <ul class="sub radious">
                 <li><a href="#">정기케어서비스</a></li>
                 <li><a href="#">온라인예약</a></li>
                 <li><a href="#">빠른예약</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">About <span>▼</span> </a>
+              <a href="#">About</a>
               <ul class="sub">
                 <li><a href="#">history</a></li>
                 <li><a href="#">location</a></li>
@@ -44,75 +45,68 @@
                 <li><a href="#">etc</a></li>
               </ul>
             </li>
-            <li><a href="#">Support</a></li>
+            <li>
+              <a href="#">Support</a>
+              <ul class="sub">
+                <li></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
       <!--슬라이더-->
-      <div id="slide">
-        <div id="slides">
-          <img src="./assets/images/coffee_1.jpg" alt="" />
-          <img src="./assets/images/coffee_2.jpg" alt="" />
-          <img src="./assets/images/coffee_3.jpg" alt="" />
-          <img src="./assets/images/coffee_4.jpg" alt="" />
-          <button id="prev">&lang;</button>
-          <button id="next">&lang;</button>
-        </div>
+      <div class="slide">
+        <ul class="slide_all">
+          <li>
+            <a href="#">
+              <img src="./assets/images/main_1.jpg" alt="coffee1" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/main_2.jpg" alt="coffee2" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/main_3.jpg" alt="coffee3" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/main_4.jpg" alt="coffee3" />
+            </a>
+          </li>
+        </ul>
       </div>
-      <div id="contents">
-        <div id="tabMenu">
-          <input type="radio" id="tab1" name="tabs" checked />
-          <label for="tab1">Notice</label>
-          <input type="radio" id="tab2" name="tabs" checked />
-          <label for="tab2">Gallery</label>
-          <div id="notice" class="tabContent">
-            <h2>공지사항</h2>
-            <ul>
-              <li>[정기케어서비스] 서비스 신청</li>
-              <li>[채용]은목상사와 함께할 엔지니어를 찾습니다</li>
-              <li>사무실 이전</li>
-              <li>일리커피를 은목에서 즐기세요</li>
-              <li>일리와 함께 성장하는 은목상사</li>
-            </ul>
-          </div>
-          <div id="gallery" class="tabContent">
-            <h2>Gallery</h2>
-            <ul>
-              <li><img src="./assets/images/machine_1.jpg" alt="" /></li>
-              <li><img src="./assets/images/machine_2.jpg" alt="" /></li>
-              <li><img src="./assets/images/machine_3.jpg" alt="" /></li>
-              <li><img src="./assets/images/machine_4.jpg" alt="" /></li>
-              <li><img src="./assets/images/coffee_1.jpg" alt="" /></li>
-              <li><img src="./assets/images/coffee_2.jpg" alt="" /></li>
-              <li><img src="./assets/images/coffee_3.jpg" alt="" /></li>
-              <li><img src="./assets/images/coffee_4.jpg" alt="" /></li>
-            </ul>
-          </div>
-        </div>
-        <!-- 바로가기 링크 -->
-        <div id="links">
-          <ul>
-            <li>
-              <a href="#">
-                <span id="quick_1"></span>
-                <p>정기케어서비스</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span id="quick_2"></span>
-                <p>빠른 예약</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span id="quick_3"></span>
-                <p>문의하기</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <div class="contents clearfix">
+          <section class="notice_gal">
+              <h3 class=""> 공지사항</h3>
+              <ul class="notice">
+                <li><a href="#">[정기케어서비스] 서비스 신청 <span class="day">2023-01-01</span></a></li>
+                <li><a href="#">[채용]은목상사와 함께할 엔지니어를 찾습니다 <span class="day">2022-12-10</span></a></li>
+                <li><a href="#">사무실 이전 <span class="day">2022-03-08</span></a></li>
+                <li><a href="#">일리커피를 은목에서 즐기세요 <span class="day">2022-04-02</span></a></li>
+                <li><a href="#">일리와 함께 성장하는 은목상사 <span class="day">2022-04-02</span></a></li>
+              </ul>
+              <h3 class="r100 on">갤러리</h3>
+               <ul class="gal on">
+                <li><a href="#">커피1</a></li>
+                <li><a href="#">커피2</a></li>
+                <li><a href="#">커피3</a></li>
+               </ul>
+          </section>
+          <section class="banner_sub">
+            <h2><a href="#">
+              <img src="./assets/images/coffee_3.jpg" alt="wholeBean">
+            </a></h2>
+          </section>
+          <!-- 바로가기 링크 -->
+          <section class="baro">
+            <h3><a href="#">정기케어서비스</a></h3>
+            <h3><a href="#">빠른 예약</a></h3>
+            <h3><a href="#">문의하기</a></h3>
+          </section>
       <footer>
         <div id="bottomMenu">
           <ul>
