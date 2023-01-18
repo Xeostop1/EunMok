@@ -1,131 +1,136 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>은목상사 커피 안내서</title>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./script/index.js"></script>
-  </head>
-  <body>
-    <div class="wrap">
-      <header class="clearfix">
-        <!-- ===logo==== -->
-        <h1>
-          <a href="index.html">
-            EUNMOK
-          </a>
-        </h1>
-        <!--====메뉴바=====-->
-        <nav>
-          <ul class="gnb clearfix">
-            <li>
-              <a href="#">Reservation</a>
-              <ul class="sub radious">
-                <li><a href="#">정기케어서비스</a></li>
-                <li><a href="#">온라인예약</a></li>
-                <li><a href="#">빠른예약</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">About</a>
-              <ul class="sub">
-                <li><a href="#">history</a></li>
-                <li><a href="#">location</a></li>
-                <li><a href="#">partners</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Product</a>
-              <ul class="sub">
-                <li><a href="#">machine</a></li>
-                <li><a href="#">coffee</a></li>
-                <li><a href="#">etc</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Support</a>
-              <ul class="sub">
-                <li></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <!--슬라이더-->
-      <div class="slide">
-        <ul class="slide_all">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>은목상사 커피 안내서</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./script/index.js"></script>
+</head>
+<body>
+  <!-- 강사의 경우 모달을 구분할 수 있게 wrap위쪽에 배치  -->
+  <div class="modal">
+    <div class="modal_inner">
+      <button>X</button>
+      <div class="title">[정기케어서비스] 서비스 신청</div>
+        모달창 샘플입니다.
+    </div>
+  </div>
+  <div class="wrap">
+    <header class="clearfix">
+      <!-- ===logo==== -->
+      <h1>
+        <a href="index.html">
+          EUNMOK
+        </a>
+      </h1>
+      <!--====메뉴바=====-->
+      <nav>
+        <ul class="gnb clearfix">
           <li>
-            <a href="#">
-              <img src="./assets/images/main_1.jpg" alt="coffee1" />
-            </a>
+            <a href="#">Reservation</a>
+            <ul class="sub radious">
+              <li><a href="#">정기케어서비스</a></li>
+              <li><a href="#">온라인예약</a></li>
+              <li><a href="#">빠른예약</a></li>
+            </ul>
           </li>
           <li>
-            <a href="#">
-              <img src="./assets/images/main_2.jpg" alt="coffee2" />
-            </a>
+            <a href="#">About</a>
+            <ul class="sub">
+              <li><a href="#">history</a></li>
+              <li><a href="#">location</a></li>
+              <li><a href="#">partners</a></li>
+            </ul>
           </li>
           <li>
-            <a href="#">
-              <img src="./assets/images/main_3.jpg" alt="coffee3" />
-            </a>
+            <a href="#">Product</a>
+            <ul class="sub">
+              <li><a href="#">machine</a></li>
+              <li><a href="#">coffee</a></li>
+              <li><a href="#">etc</a></li>
+            </ul>
           </li>
           <li>
-            <a href="#">
-              <img src="./assets/images/main_4.jpg" alt="coffee3" />
-            </a>
+            <a href="#">Support</a>
+            <ul class="sub">
+              <li></li>
+            </ul>
           </li>
         </ul>
-      </div>
-      <div class="contents clearfix">
-          <section class="notice_gal">
-              <h3 class=""> 공지사항</h3>
-              <ul class="notice">
-                <li><a href="#">[정기케어서비스] 서비스 신청 <span class="day">2023-01-01</span></a></li>
-                <li><a href="#">[채용]은목상사와 함께할 엔지니어를 찾습니다 <span class="day">2022-12-10</span></a></li>
-                <li><a href="#">사무실 이전 <span class="day">2022-03-08</span></a></li>
-                <li><a href="#">일리커피를 은목에서 즐기세요 <span class="day">2022-04-02</span></a></li>
-                <li><a href="#">일리와 함께 성장하는 은목상사 <span class="day">2022-04-02</span></a></li>
-              </ul>
-              <h3 class="r100 on">갤러리</h3>
-               <ul class="gal on">
-                <li><a href="#">커피1</a></li>
-                <li><a href="#">커피2</a></li>
-                <li><a href="#">커피3</a></li>
-               </ul>
-          </section>
-          <section class="banner_sub">
-            <h2><a href="#">
-              <img src="./assets/images/coffee_3.jpg" alt="wholeBean">
-            </a></h2>
-          </section>
-          <!-- 바로가기 링크 -->
-          <section class="baro">
-            <h3><a href="#">정기케어서비스</a></h3>
-            <h3><a href="#">빠른 예약</a></h3>
-            <h3><a href="#">문의하기</a></h3>
-          </section>
-      <footer>
-        <div id="bottomMenu">
-          <ul>
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">사이트맵</a></li>
-          </ul>
-          <div id="sns">
-            <ul>
-              <li><a href="#">인스타</a></li>
-              <li><a href="#">페이스북</a></li>
-            </ul>
-          </div>
-        </div>
-        <div id="company">
-          <p>서울특별시 강서구 양천로 603-6</p>
-        </div>
-      </footer>
-      <!--ㅋㅋㅋㅋㅋ git push -->
+      </nav>
+    </header>
+    <!--슬라이더-->
+    <div class="slide">
+      <ul class="slide_all">
+        <li>
+          <a href="#">
+            <img src="./assets/images/main_1.jpg" alt="coffee1" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./assets/images/main_2.jpg" alt="coffee2" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./assets/images/main_3.jpg" alt="coffee3" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./assets/images/main_4.jpg" alt="coffee3" />
+          </a>
+        </li>
+      </ul>
     </div>
-  </body>
+    <div class="contents clearfix">
+      <section class="notice_gal">
+        <h3 class="on"> 공지사항</h3>
+        <ul class="notice on">
+          <li><a href="#">[정기케어서비스] 서비스 신청 <span class="day">2023-01-01</span></a></li>
+          <li><a href="#">[채용] 은목상사와 함께할 엔지니어를 찾습니다 <span class="day">2022-12-10</span></a></li>
+          <li><a href="#">사무실 이전 <span class="day">2022-03-08</span></a></li>
+          <li><a href="#">일리커피를 은목에서 즐기세요 <span class="day">2022-04-02</span></a></li>
+          <li><a href="#">일리와 함께 성장하는 은목상사 <span class="day">2022-04-02</span></a></li>
+        </ul>
+        <h3 class="r100">갤러리</h3>
+        <ul class="gal">
+          <li><a href="#">커피1</a></li>
+          <li><a href="#">커피2</a></li>
+          <li><a href="#">커피3</a></li>
+        </ul>
+      </section>
+      <section class="banner_sub">
+        <h2><a href="#">
+            <img src="./assets/images/coffee_3.jpg" alt="wholeBean">
+          </a></h2>
+      </section>
+      <!-- 바로가기 링크 -->
+      <section class="baro">
+        <h2>바로가기</h2>
+        <h3><a href="#">정기케어서비스</a></h3>
+        <h3><a href="#">빠른 예약</a></h3>
+        <h3><a href="#">문의하기</a></h3>
+      </section>
+    </div>
+    <footer class="clearfix">
+      <ul class="copy clearfix">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li><a href="#">서울특별시 강서구 양천로 603-6</a></li>
+      </ul>
+      <div class="sns">
+        <i><a href="#">인스타</a></i>
+        <i><a href="#">페이스북</a></i>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
