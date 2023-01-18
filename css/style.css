@@ -30,6 +30,35 @@ img{
 body{
     color: #222328;
 }
+
+/* =====모달======= */
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    /* z-index 숫자가 높을 수록 위로 */
+    z-index: 50;
+    display: none;
+}
+.modal .modal_inner{
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* 가운데 정렬 만들어줌 */
+    transform: translate(-50%, -50%);
+}
+.modal .modal_inner button{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+.modal > title{}
+
 /* =====헤더===== */
 header{
     width: 100%;
@@ -183,6 +212,7 @@ header nav ul.gnb>li>ul.sub>li:hover>a{
     color: #222328;
     text-align: center;
     cursor: pointer;
+    font-size: 20px;
 }
 .contents .notice_gal h3.r100{
     left: 100px;
@@ -214,47 +244,67 @@ header nav ul.gnb>li>ul.sub>li:hover>a{
     /* contents .notice_gal ul.notice li a .day 의 기준 */
     /*날짜를 한쪽으로 정렬할려고 이걸 잡은거네! */
     position: relative;
+    padding-left: 10px;
 }
 .contents .notice_gal ul.notice li a {
     display: block;
     width: 100%;
     height: 100%;
+    padding: 5px;
 }
 .contents .notice_gal ul.notice li a:hover{
     color: #ccc;
 }
-/*--게시판 */
+/*=====게시판 */
 .contents .notice_gal ul.notice li a .day{
     position: absolute;
     right: 10px;
     top: 0;
     font-size: 12px;
 }
-/* ---갤러리 */
+/* =====갤러리========== */
 .contents .notice_gal ul.gal   {
     width: 100%;
 }
 .contents .notice_gal ul.gal li  {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     float: left;
-    background-size: 100px;
+    /* 사이즈를 포토샵에서 맞추던가 변경이 요망 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 12px;
+    margin-top: 12px;
+    /* 글씨를 태그에서 지우지 말고 자리를 밀어줌 */
+    /* text-indent: -9999px; */
+    /* 같은 방법 */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 /* 사진 배경 url로 처리 */
 .contents .notice_gal ul.gal li:nth-child(1){
-    background-color: url(../assets/images/machine_3.jpg);
+    background-image: url(../assets/images/machine_3.jpg);
+}
+.contents .notice_gal ul.gal li:nth-child(2){
+    background-image: url(../assets/images/machine_5.jpg);
+}
+.contents .notice_gal ul.gal li:nth-child(3){
+    background-image: url(../assets/images/machine_2.jpg);
 }
 .contents .notice_gal ul.gal li a {
     display: block;
     width: 100%;
     height: 100%;
 }
-/* ===.contents .banner_sub===== */
+/* ======배너===== */
 .contents .banner_sub{
     width: 350px;
     height: 200px;
 }
-.contents .banner_sub h2{}
+.contents .banner_sub h2{
+
+}
 .contents .banner_sub h2 a img{
     width: 350px;
     height: 200px;
@@ -264,12 +314,59 @@ header nav ul.gnb>li>ul.sub>li:hover>a{
     width: 350px;
     height: 200px;
 }
-.contents .baro h3{}
-.contents .baro h3 a{}
+.contents .baro h2{
+    background-color: rgb(124, 67, 21);
+    color: white;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 9px;
+}
+/* =====바로가기====== */
+.contents .baro h3 {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #333;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 1px solid white;
+}
+.contents .baro h3 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .baro h3 a:hover{
+    opacity: 0.8;
+}
 
-
+/* ========푸터========= */
 footer{
     width: 100%;
     height: 100px;
     background-color: aqua;
+}
+footer ul.copy{
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+footer ul.copy li{
+    float: left;
+    margin-right: 20px;
+}
+footer .sns{
+    float: left;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 30px;
 }
